@@ -18,6 +18,9 @@ export default {
         snow: "#F2F5F9",
         lightYellow: "#FFF4DF",
       },
+      padding: {
+        22: "5.5rem", // 88px
+      },
     },
   },
   plugins: [],
