@@ -8,8 +8,8 @@ import twitter from "/src/assets/icons/twitter.svg";
 function Footer() {
   return (
     <footer>
-      <div className="py-22 bg-darkNavy px-8">
-        <h2 className="mb-10 text-center font-mono text-[2rem] font-bold tracking-[-1.43px] text-white">
+      <div className="bg-darkNavy px-8 py-22">
+        <h2 className="mb-10 text-center font-mono text-[2rem]/none font-bold tracking-[-1.43px] text-white">
           Sign up and Scoot off today
         </h2>
         <div className="flex h-10 justify-center gap-3">
@@ -17,7 +17,7 @@ function Footer() {
           <img src={googlePlay} alt="" />
         </div>
       </div>
-      <div className="pb-22 flex flex-col items-center bg-[#333A44] pt-16">
+      <div className="flex flex-col items-center bg-[#333A44] pb-22 pt-16">
         <svg
           className="mb-10 w-[107px] fill-white"
           xmlns="http://www.w3.org/2000/svg"

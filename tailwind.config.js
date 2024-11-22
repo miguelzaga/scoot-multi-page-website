@@ -31,17 +31,22 @@ export default {
     },
     extend: {
       padding: {
-        22: "5.5rem", // 88px
+        22: "5.5rem", // 88px,
       },
       margin: {
         29: "7.5rem", // 120px
       },
+      space: {
+        29: "7.5rem", // 120px
+      },
+
       fontSize: {
         body: ["0.938rem", "1.563rem"], // [15px, 25px]
         h4: ["1.5rem", "1.75rem"], // [24px, 28px]
         h3: ["2.5rem", "3rem"], // [40px, 48px]
         h2: ["3rem", "3rem"], // [48px, 48px]
         h1: ["3.5rem", "3.5rem"], // [56px, 56px]
+        "3.5xl": "2rem", // 32px
       },
     },
   },
