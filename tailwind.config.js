@@ -17,6 +17,7 @@ export default {
       snow: "#F2F5F9",
       lightYellow: "#FFF4DF",
       white: "#fff",
+      black: "#000",
       transparent: "rgba(0, 0, 0, 0)",
     },
 
