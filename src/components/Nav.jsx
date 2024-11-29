@@ -8,12 +8,12 @@ function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
-      <div className="h-16">
+      <div className="h-16 md:h-auto">
         <nav
-          className={`w-screen ${isOpen ? "bg-black/50 fixed h-screen" : "relative h-16"}`}
+          className={`w-screen ${isOpen ? "fixed h-screen bg-black/50" : "relative"} `}
         >
           <button
-            className="absolute left-8 top-6"
+            className="absolute left-8 top-6 md:hidden"
             onClick={() => setIsOpen(!isOpen)}
           >
             <img
@@ -21,14 +21,18 @@ function Nav() {
               alt={`${isOpen ? "close" : "open"} menu`}
             />
           </button>
-          <div className="flex h-16 items-center justify-center bg-white">
+          <div className="flex h-16 items-center justify-center bg-white px-10 md:h-24 md:justify-start md:gap-[58px]">
             <Link to="/">
-              <img className="w-[75px]" src={logo} alt="scoot logo" />
+              <img
+                className="min-w-[75px] md:min-w-[107px]"
+                src={logo}
+                alt="scoot logo"
+              />
             </Link>
             <div
-              className={`${isOpen ? "" : "hidden"} absolute left-0 top-16 h-[calc(100vh-64px)] w-64 bg-darkNavy`}
+              className={`${isOpen ? "" : "hidden"} absolute left-0 top-16 h-[calc(100vh-64px)] w-64 bg-darkNavy md:static md:flex md:h-auto md:w-full md:bg-transparent`}
             >
-              <ul className="ml-8 mt-16 flex flex-col gap-6 font-mono text-lg/6 font-bold text-white">
+              <ul className="ml-8 mt-16 flex min-w-fit flex-col gap-6 font-mono text-lg/6 font-bold text-white md:m-0 md:flex-row md:items-center md:text-body md:text-dimGrey">
                 <li>
                   <Link to="/about">About</Link>
                 </li>
@@ -39,7 +43,7 @@ function Nav() {
                   <Link to="/careers">Careers</Link>
                 </li>
               </ul>
-              <button className="button fixed bottom-6 left-8 w-48">
+              <button className="button fixed bottom-6 left-8 w-48 md:static md:ml-auto md:w-[180px]">
                 Get Scootin
               </button>
             </div>
