@@ -40,6 +40,9 @@ export default {
       space: {
         29: "7.5rem", // 120px
       },
+      maxWidth: {
+        desktop: "1110px",
+      },
 
       fontSize: {
         body: ["0.938rem", "1.563rem"], // [15px, 25px]

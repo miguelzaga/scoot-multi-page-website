@@ -21,7 +21,7 @@ function Nav() {
               alt={`${isOpen ? "close" : "open"} menu`}
             />
           </button>
-          <div className="mx-auto flex h-16 max-w-[1106px] items-center justify-center bg-white md:h-24 md:justify-start md:gap-[58px]">
+          <div className="max-w-desktop mx-auto flex h-16 items-center justify-center bg-white md:h-24 md:justify-start md:gap-[58px]">
             <Link to="/">
               <img
                 className="min-w-[75px] md:min-w-[107px]"
@@ -43,7 +43,7 @@ function Nav() {
                   <Link to="/careers">Careers</Link>
                 </li>
               </ul>
-              <button className="button fixed bottom-6 left-8 w-48 md:static md:ml-auto md:w-[180px]">
+              <button className="button fixed bottom-6 left-8 w-48 md:static md:ml-auto md:w-[180px] lg:mr-1">
                 Get Scootin
               </button>
             </div>

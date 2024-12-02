@@ -8,17 +8,17 @@ import telemetry from "/src/assets/images/telemetry.jpg";
 function Home() {
   return (
     <>
-      <section className="bg-darkNavy px-8">
-        <div className="mx-auto max-w-[573px] pb-[179px] pt-[115px] text-center text-white md:pb-[217px] md:pt-[137px]">
-          <h1 className="mb-6 font-mono text-h3 font-bold tracking-tighter md:text-h1">
+      <section className="bg-darkNavy px-8 md:px-10">
+        <div className="max-w- lg:max-w-desktop mx-auto max-w-[573px] pb-[179px] pt-[115px] text-center text-white md:pb-[217px] md:pt-[137px] lg:py-[153px] lg:text-left">
+          <h1 className="mb-6 font-mono text-h3 font-bold tracking-tighter md:text-h1 lg:mb-10 lg:max-w-lg">
             Scooter sharing made simple
           </h1>
-          <p className="mb-[34px] md:mb-8">
+          <p className="mb-[34px] md:mb-8 lg:mb-10 lg:ml-24">
             Scoot takes the hassle out of urban mobility. Our bikes are placed
             in convenient locations in each of our cities. Use our app to locate
             the nearest bike, unlock it with a tap, and you’re away!
           </p>
-          <button className="button">Get Scootin</button>
+          <button className="button lg:ml-24">Get Scootin</button>
         </div>
       </section>
       <section className="bg-white px-8">
