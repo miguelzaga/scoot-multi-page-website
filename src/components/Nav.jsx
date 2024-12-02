@@ -10,7 +10,7 @@ function Nav() {
     <>
       <div className="h-16 md:h-auto">
         <nav
-          className={`w-screen ${isOpen ? "fixed h-screen bg-black/50" : "relative"} `}
+          className={`w-screen ${isOpen ? "fixed h-screen bg-black/50" : "relative"} md:px-10`}
         >
           <button
             className="absolute left-8 top-6 md:hidden"
@@ -21,7 +21,7 @@ function Nav() {
               alt={`${isOpen ? "close" : "open"} menu`}
             />
           </button>
-          <div className="flex h-16 items-center justify-center bg-white px-10 md:h-24 md:justify-start md:gap-[58px]">
+          <div className="mx-auto flex h-16 max-w-[1106px] items-center justify-center bg-white md:h-24 md:justify-start md:gap-[58px]">
             <Link to="/">
               <img
                 className="min-w-[75px] md:min-w-[107px]"
@@ -32,7 +32,7 @@ function Nav() {
             <div
               className={`${isOpen ? "" : "hidden"} absolute left-0 top-16 h-[calc(100vh-64px)] w-64 bg-darkNavy md:static md:flex md:h-auto md:w-full md:bg-transparent`}
             >
-              <ul className="ml-8 mt-16 flex min-w-fit flex-col gap-6 font-mono text-lg/6 font-bold text-white md:m-0 md:flex-row md:items-center md:text-body md:text-dimGrey">
+              <ul className="ml-8 mt-16 flex min-w-fit flex-col gap-6 font-mono text-lg/6 font-bold text-white md:m-0 md:flex-row md:items-center md:text-body md:text-dimGrey lg:gap-8">
                 <li>
                   <Link to="/about">About</Link>
                 </li>
