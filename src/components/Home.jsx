@@ -21,16 +21,12 @@ function Home() {
           <button className="button lg:ml-24">Get Scootin</button>
         </div>
       </section>
-      <section className="bg-white px-8">
-        <ul className="mx-auto my-29 max-w-[573px] space-y-12 text-center md:mb-36 md:mt-[122px] md:text-left">
-          <li className="md:flex md:items-start md:gap-20">
-            <img
-              className="mx-auto mb-6 max-w-14 md:max-w-24"
-              src={locate}
-              alt=""
-            />
+      <section className="bg-white px-8 md:px-10">
+        <ul className="lg:max-w-desktop mx-auto my-29 flex max-w-[573px] flex-col gap-12 text-center md:mb-36 md:mt-[122px] md:gap-10 md:text-left lg:mb-[200px] lg:mt-40 lg:flex-row lg:gap-[30px]">
+          <li className="flex flex-col items-center gap-6 md:flex-row md:items-start md:gap-20 lg:flex-col lg:gap-10">
+            <img className="max-w-14 md:max-w-24" src={locate} alt="" />
             <div>
-              <h2 className="md:mb-[2 mb-6 font-mono text-xl font-bold tracking-tighter text-darkNavy md:text-h4">
+              <h2 className="mb-6 font-mono text-xl font-bold tracking-tighter text-darkNavy md:mb-[27px] md:text-h4">
                 Locate with app
               </h2>
               <p className="text-dimGrey">
@@ -40,14 +36,10 @@ function Home() {
               </p>
             </div>
           </li>
-          <li className="md:flex md:items-start md:gap-20">
-            <img
-              className="mx-auto mb-6 max-w-14 md:max-w-24"
-              src={scooter}
-              alt=""
-            />
+          <li className="flex flex-col items-center gap-6 md:flex-row md:items-start md:gap-20 lg:flex-col lg:gap-10">
+            <img className="max-w-14 md:max-w-24" src={scooter} alt="" />
             <div>
-              <h2 className="md:mb-[2 mb-6 font-mono text-xl font-bold tracking-tighter text-darkNavy md:text-h4">
+              <h2 className="mb-6 font-mono text-xl font-bold tracking-tighter text-darkNavy md:mb-[27px] md:text-h4">
                 Pick your scooter
               </h2>
               <p className="text-dimGrey">
@@ -57,14 +49,10 @@ function Home() {
               </p>
             </div>
           </li>
-          <li className="md:flex md:items-start md:gap-20">
-            <img
-              className="mx-auto mb-6 max-w-14 md:max-w-24"
-              src={ride}
-              alt=""
-            />
+          <li className="flex flex-col items-center gap-6 md:flex-row md:items-start md:gap-20 lg:flex-col lg:gap-10">
+            <img className="max-w-14 md:max-w-24" src={ride} alt="" />
             <div>
-              <h2 className="md:mb-[2 mb-6 font-mono text-xl font-bold tracking-tighter text-darkNavy md:text-h4">
+              <h2 className="mb-6 font-mono text-xl font-bold tracking-tighter text-darkNavy md:mb-[27px] md:text-h4">
                 Enjoy the ride
               </h2>
               <p className="text-dimGrey">
