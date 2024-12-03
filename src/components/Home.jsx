@@ -9,7 +9,7 @@ function Home() {
   return (
     <>
       <section className="bg-darkNavy px-8 md:px-10">
-        <div className="max-w- lg:max-w-desktop mx-auto max-w-[573px] pb-[179px] pt-[115px] text-center text-white md:pb-[217px] md:pt-[137px] lg:py-[153px] lg:text-left">
+        <div className="max-w- mx-auto max-w-[573px] pb-[179px] pt-[115px] text-center text-white md:pb-[217px] md:pt-[137px] lg:max-w-desktop lg:py-[153px] lg:text-left">
           <h1 className="mb-6 font-mono text-h3 font-bold tracking-tighter md:text-h1 lg:mb-10 lg:max-w-lg">
             Scooter sharing made simple
           </h1>
@@ -22,7 +22,7 @@ function Home() {
         </div>
       </section>
       <section className="bg-white px-8 md:px-10">
-        <ul className="lg:max-w-desktop mx-auto my-29 flex max-w-[573px] flex-col gap-12 text-center md:mb-36 md:mt-[122px] md:gap-10 md:text-left lg:mb-[200px] lg:mt-40 lg:flex-row lg:gap-[30px]">
+        <ul className="mx-auto my-29 flex max-w-[573px] flex-col gap-12 text-center md:mb-36 md:mt-[122px] md:gap-10 md:text-left lg:mb-[200px] lg:mt-40 lg:max-w-desktop lg:flex-row lg:gap-[30px]">
           <li className="flex flex-col items-center gap-6 md:flex-row md:items-start md:gap-20 lg:flex-col lg:gap-10">
             <img className="max-w-14 md:max-w-24" src={locate} alt="" />
             <div>
@@ -64,47 +64,59 @@ function Home() {
           </li>
         </ul>
       </section>
-      <section className="mb-29 space-y-29 bg-white px-8 md:mb-[104px]">
-        <article className="text-center">
-          <img className="mx-auto mb-14 rounded-full" src={telemetry} alt="" />
+      <section className="mx-auto mb-29 space-y-29 bg-white px-8 md:mb-[104px] md:px-10 lg:mb-52">
+        <article className="mx-auto text-center lg:flex lg:max-w-desktop lg:justify-between lg:text-left odd:lg:flex-row-reverse">
+          <img
+            className="mx-auto mb-14 rounded-full lg:m-0"
+            src={telemetry}
+            alt=""
+          />
 
-          <div className="mx-auto max-w-[576px] space-y-8 md:space-y-10">
-            <h2 className="mx-auto max-w-[457px] font-mono text-3.5xl/none font-bold tracking-tighter text-darkNavy md:text-h2">
+          <div className="mx-auto flex max-w-[576px] flex-col items-center gap-y-8 md:gap-y-10 lg:mx-0 lg:max-w-[445px] lg:items-start lg:gap-y-6">
+            <h2 className="mx-auto max-w-[457px] font-mono text-3.5xl/none font-bold tracking-tighter text-darkNavy md:text-h2 lg:mt-[66px]">
               Easy to use riding telemetry
             </h2>
-            <p className="mb-8 text-dimGrey">
+            <p className="text-dimGrey">
               The Scoot app is available with riding telemetry. This means it
               can show you your average speed, how long you&apos;ve been using
               the scooter, your traveling distance, and many more things all in
               an easy to use app.
             </p>
-            <button className="button">Learn More</button>
+            <button className="button lg:mt-4">Learn More</button>
           </div>
         </article>
-        <article className="text-center">
-          <img className="mx-auto mb-14 rounded-full" src={nearYou} alt="" />
+        <article className="mx-auto text-center lg:flex lg:max-w-desktop lg:justify-between lg:text-left odd:lg:flex-row-reverse">
+          <img
+            className="mx-auto mb-14 rounded-full lg:m-0"
+            src={nearYou}
+            alt=""
+          />
 
-          <div className="mx-auto max-w-[576px] space-y-8 md:space-y-10">
-            <h2 className="mx-auto max-w-[457px] font-mono text-3.5xl/none font-bold tracking-tighter text-darkNavy md:text-h2">
+          <div className="itnterems-ce mx-auto flex max-w-[576px] flex-col gap-y-8 md:gap-y-10 lg:mx-0 lg:max-w-[445px] lg:items-start lg:gap-y-6">
+            <h2 className="mx-auto max-w-[457px] font-mono text-3.5xl/none font-bold tracking-tighter text-darkNavy md:text-h2 lg:mt-[66px]">
               Coming to a city near you
             </h2>
-            <p className="mb-8 text-dimGrey">
+            <p className="text-dimGrey">
               Scoot is available in 4 major cities so far. We’re expanding
               rapidly, so be sure to let us know if you want to see us in your
               hometown. We’re aiming to let our scooters loose on 23 cities over
               the coming year.
             </p>
-            <button className="button">Learn More</button>
+            <button className="button lg:mt-4">Learn More</button>
           </div>
         </article>
-        <article className="text-center">
-          <img className="mx-auto mb-14 rounded-full" src={payments} alt="" />
+        <article className="mx-auto text-center lg:flex lg:max-w-desktop lg:justify-between lg:text-left odd:lg:flex-row-reverse">
+          <img
+            className="mx-auto mb-14 rounded-full lg:m-0"
+            src={payments}
+            alt=""
+          />
 
-          <div className="mx-auto max-w-[576px] space-y-8 md:space-y-10">
-            <h2 className="mx-auto max-w-[457px] font-mono text-3.5xl/none font-bold tracking-tighter text-darkNavy md:text-h2">
+          <div className="mx-auto flex max-w-[576px] flex-col items-center gap-y-8 md:gap-y-10 lg:mx-0 lg:max-w-[445px] lg:items-start lg:gap-y-6">
+            <h2 className="mx-auto max-w-[457px] font-mono text-3.5xl/none font-bold tracking-tighter text-darkNavy md:text-h2 lg:mt-[66px]">
               Zero hassle payments
             </h2>
-            <p className="mb-8 text-dimGrey">
+            <p className="text-dimGrey">
               Our payment is as easy as one two three. We accept most credit
               cards and debit cards. You can also link your PayPal account
               inside the app. Need to pay later? No worries! You can defer
