@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-body;
+  }
+}
+
+@layer components {
+  .button {
+    @apply h-[53px] w-[180px] border-[3px] border-yellow bg-yellow font-mono font-bold text-white hover:bg-transparent hover:text-yellow;
+  }
+}
