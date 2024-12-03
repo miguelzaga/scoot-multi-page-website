@@ -92,7 +92,7 @@ function Home() {
             alt=""
           />
 
-          <div className="itnterems-ce mx-auto flex max-w-[576px] flex-col gap-y-8 md:gap-y-10 lg:mx-0 lg:max-w-[445px] lg:items-start lg:gap-y-6">
+          <div className="mx-auto flex max-w-[576px] flex-col items-center gap-y-8 md:gap-y-10 lg:mx-0 lg:max-w-[445px] lg:items-start lg:gap-y-6">
             <h2 className="mx-auto max-w-[457px] font-mono text-3.5xl/none font-bold tracking-tighter text-darkNavy md:text-h2 lg:mt-[66px]">
               Coming to a city near you
             </h2>
