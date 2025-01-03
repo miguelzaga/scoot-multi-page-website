@@ -24,7 +24,7 @@ function Nav() {
           <div className="max-w-desktop mx-auto flex h-16 items-center justify-center bg-white md:h-24 md:justify-start md:gap-[58px]">
             <Link to="/">
               <img
-                className="min-w-[75px] md:min-w-[107px]"
+                className="max-w-[75px] md:max-w-[107px]"
                 src={logo}
                 alt="scoot logo"
               />

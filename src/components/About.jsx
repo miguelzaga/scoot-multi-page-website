@@ -1,14 +1,21 @@
+import digitalEra from "/src/assets/images/digital-era.jpg";
+import betterLiving from "/src/assets/images/better-living.jpg";
+
 function About() {
   return (
     <>
-      <header>
-        <h1>About</h1>
+      <header className="flex h-40 items-center justify-center bg-darkNavy">
+        <h1 className="font-mono text-h3 font-bold text-white">About</h1>
       </header>
 
       <main>
         <section>
           <article>
-            <img src="" alt="" />
+            <img
+              className="rounded-full"
+              src={digitalEra}
+              alt="Somebody scrolling on a cellphone"
+            />
             <div>
               <h2>Mobility for the digital era</h2>
               <p>
@@ -19,7 +26,7 @@ function About() {
             </div>
           </article>
           <article>
-            <img src="" alt="" />
+            <img src={betterLiving} alt="Yellow bus speeding in a gray city" />
             <div>
               <h2>Better urban living</h2>
               <p>
