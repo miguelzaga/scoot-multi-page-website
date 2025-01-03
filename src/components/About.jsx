@@ -4,12 +4,14 @@ import betterLiving from "/src/assets/images/better-living.jpg";
 function About() {
   return (
     <>
-      <header className="flex h-40 items-center justify-center bg-darkNavy">
-        <h1 className="font-mono text-h3 font-bold text-white">About</h1>
+      <header className="flex h-40 items-center justify-center bg-darkNavy px-[97px] md:h-[200px] md:justify-start">
+        <h1 className="font-mono text-h3 font-bold tracking-tighter text-white md:text-h1">
+          About
+        </h1>
       </header>
 
-      <main>
-        <section>
+      <main className="px-8">
+        <section className="mb-29 mt-[72px]">
           <article>
             <img
               className="rounded-full"
