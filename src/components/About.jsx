@@ -1,13 +1,27 @@
 import digitalEra from "/src/assets/images/digital-era.jpg";
 import betterLiving from "/src/assets/images/better-living.jpg";
+import aboutHeroMobile from "/src/assets/images/about-hero-mobile.jpg";
+import aboutHeroTablet from "/src/assets/images/about-hero-tablet.jpg";
+import aboutHeroDesktop from "/src/assets/images/about-hero-desktop.jpg";
+import whiteCircles from "/src/assets/patterns/white-circles.svg"
 
 function About() {
   return (
     <>
-      <header className="flex h-40 items-center justify-center bg-darkNavy px-[97px] md:h-[200px] md:justify-start">
-        <h1 className="font-mono text-h3 font-bold tracking-tighter text-white md:text-h1">
+      <header className="relative z-0 overflow-y-clip bg-darkNavy px-[97px] py-[60px] md:py-[72px]">
+        <h1 className="mx-auto max-w-desktop text-center font-mono text-h3 font-bold tracking-tighter text-white md:text-left md:text-h1">
           About
         </h1>
+        <picture>
+          <source media="(min-width: 1024px)" srcset={aboutHeroDesktop} />
+          <source media="(min-width: 640px)" srcset={aboutHeroTablet} />
+          <img
+            src={aboutHeroMobile}
+            className="absolute bottom-0 left-0 top-0 -z-10 min-h-full w-full"
+            alt=""
+          />
+        </picture>
+        <img src={whiteCircles}  className="invisible md:visible absolute right-[-31px] top-[69px] w-fit"/>
       </header>
 
       <main className="px-8">
