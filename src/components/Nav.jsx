@@ -10,7 +10,7 @@ function Nav() {
     <>
       <div className="h-16 md:h-auto">
         <nav
-          className={`w-screen ${isOpen ? "fixed h-screen bg-black/50" : "relative"} md:px-10`}
+          className={`w-full ${isOpen ? "fixed h-screen bg-black/50" : "relative"} z-10 md:px-10`}
         >
           <button
             className="absolute left-8 top-6 md:hidden"
@@ -21,7 +21,7 @@ function Nav() {
               alt={`${isOpen ? "close" : "open"} menu`}
             />
           </button>
-          <div className="max-w-desktop mx-auto flex h-16 items-center justify-center bg-white md:h-24 md:justify-start md:gap-[58px]">
+          <div className="mx-auto flex h-16 max-w-desktop items-center justify-center bg-white md:h-24 md:justify-start md:gap-[58px]">
             <Link to="/">
               <img
                 className="max-w-[75px] md:max-w-[107px]"

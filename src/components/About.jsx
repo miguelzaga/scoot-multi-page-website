@@ -3,12 +3,12 @@ import betterLiving from "/src/assets/images/better-living.jpg";
 import aboutHeroMobile from "/src/assets/images/about-hero-mobile.jpg";
 import aboutHeroTablet from "/src/assets/images/about-hero-tablet.jpg";
 import aboutHeroDesktop from "/src/assets/images/about-hero-desktop.jpg";
-import whiteCircles from "/src/assets/patterns/white-circles.svg"
+import whiteCircles from "/src/assets/patterns/white-circles.svg";
 
 function About() {
   return (
     <>
-      <header className="relative z-0 overflow-y-clip bg-darkNavy px-[97px] py-[60px] md:py-[72px]">
+      <header className="relative z-0 overflow-clip bg-darkNavy px-[97px] py-[60px] md:py-[72px]">
         <h1 className="mx-auto max-w-desktop text-center font-mono text-h3 font-bold tracking-tighter text-white md:text-left md:text-h1">
           About
         </h1>
@@ -21,31 +21,42 @@ function About() {
             alt=""
           />
         </picture>
-        <img src={whiteCircles}  className="invisible md:visible absolute right-[-31px] top-[69px] w-fit"/>
+        <img
+          src={whiteCircles}
+          className="invisible absolute right-[-31px] top-[69px] w-fit md:visible"
+        />
       </header>
 
       <main className="px-8">
-        <section className="mb-29 mt-[72px]">
-          <article>
+        <section className="mx-auto mb-29 mt-[72px] max-w-desktop md:mt-36 lg:mt-29">
+          <article className="mb-29 lg:flex lg:items-center lg:justify-between odd:lg:flex-row-reverse">
             <img
-              className="rounded-full"
+              className="mx-auto mb-14 rounded-full lg:m-0"
               src={digitalEra}
               alt="Somebody scrolling on a cellphone"
             />
-            <div>
-              <h2>Mobility for the digital era</h2>
-              <p>
+            <div className="mx-auto max-w-[573px] lg:mx-0 lg:max-w-[445px]">
+              <h2 className="mx-auto mb-8 max-w-[457px] text-center font-mono text-3.5xl/none font-bold tracking-tighter text-darkNavy md:mb-10 md:text-5xl lg:mb-6 lg:text-left">
+                Mobility for the digital era
+              </h2>
+              <p className="text-center text-dimGrey lg:text-left">
                 Getting around should be simple (and even fun!) for everyone. We
                 embrace technology to provide low cost, smart access to scooters
                 at your fingertips.
               </p>
             </div>
           </article>
-          <article>
-            <img src={betterLiving} alt="Yellow bus speeding in a gray city" />
-            <div>
-              <h2>Better urban living</h2>
-              <p>
+          <article className="mb-29 lg:flex lg:items-center lg:justify-between odd:lg:flex-row-reverse">
+            <img
+              className="mx-auto mb-14 rounded-full lg:m-0"
+              src={betterLiving}
+              alt="Yellow bus speeding in a gray city"
+            />
+            <div className="mx-auto max-w-[573px] lg:mx-0 lg:max-w-[445px]">
+              <h2 className="mx-auto mb-8 max-w-[457px] text-center font-mono text-3.5xl/none font-bold tracking-tighter text-darkNavy md:mb-10 md:text-5xl lg:mb-6 lg:text-left">
+                Better urban living
+              </h2>
+              <p className="text-center text-dimGrey lg:text-left">
                 We’re helping connect cities and bring people closer together.
                 Our scooters are also fully-electric and we offset the minimal
                 carbon footprint for each ride.
