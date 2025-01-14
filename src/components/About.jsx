@@ -4,6 +4,9 @@ import aboutHeroMobile from "/src/assets/images/about-hero-mobile.jpg";
 import aboutHeroTablet from "/src/assets/images/about-hero-tablet.jpg";
 import aboutHeroDesktop from "/src/assets/images/about-hero-desktop.jpg";
 import whiteCircles from "/src/assets/patterns/white-circles.svg";
+import ourTech from "/src/assets/images/our-tech.jpg";
+import ourIntegrity from "/src/assets/images/our-integrity.jpg";
+import ourCommunity from "/src/assets/images/our-community.jpg";
 
 function About() {
   return (
@@ -13,8 +16,8 @@ function About() {
           About
         </h1>
         <picture>
-          <source media="(min-width: 1024px)" srcset={aboutHeroDesktop} />
-          <source media="(min-width: 640px)" srcset={aboutHeroTablet} />
+          <source media="(min-width: 1024px)" srcSet={aboutHeroDesktop} />
+          <source media="(min-width: 640px)" srcSet={aboutHeroTablet} />
           <img
             src={aboutHeroMobile}
             className="absolute bottom-0 left-0 top-0 -z-10 min-h-full w-full"
@@ -64,39 +67,65 @@ function About() {
             </div>
           </article>
         </section>
-        <section>
-          <h2>Our values</h2>
-          <ul>
-            <li>
-              <div>
-                <img src="" alt="" />
-                <b>01</b>
+        <section className="mx-auto mb-[145px] max-w-desktop text-center md:mb-29">
+          <h2 className="mb-16 font-mono text-3.5xl/none font-bold tracking-tighter text-darkNavy md:mb-[105px] md:text-5xl lg:mb-[103px]">
+            Our values
+          </h2>
+          <ul className="flex flex-col gap-14 lg:flex-row lg:gap-[30px]">
+            <li className="mx-auto max-w-[457px] lg:basis-1/3">
+              <div className="relative mb-4 pb-12 md:mb-8">
+                <img
+                  src={ourTech}
+                  alt="Someone holding a cellphone"
+                  className="mx-auto rounded-full"
+                />
+                <div className="absolute bottom-0 left-1/2 flex h-24 w-24 -translate-x-1/2 items-center justify-center rounded-full bg-yellow font-mono text-2xl/7 font-bold tracking-tighter text-darkNavy">
+                  01
+                </div>
               </div>
-              <h3>Our tech</h3>
-              <p>
+              <h3 className="mb-[27px] font-mono text-2xl/7 font-bold tracking-tighter text-darkNavy">
+                Our tech
+              </h3>
+              <p className="text-dimGrey">
                 We’re using cutting edge technology to drive accessible urban
                 transportation forward. Our fully electric scooters are a joy to
                 ride!
               </p>
             </li>
-            <li>
-              <div>
-                <img src="" alt="" />
-                <b>02</b>
+            <li className="mx-auto max-w-[457px] lg:basis-1/3">
+              <div className="relative mb-4 pb-12 md:mb-8">
+                <img
+                  src={ourIntegrity}
+                  alt="Someone driving a yellow motorcycle"
+                  className="mx-auto rounded-full"
+                />
+                <div className="absolute bottom-0 left-1/2 flex h-24 w-24 -translate-x-1/2 items-center justify-center rounded-full bg-yellow">
+                  02
+                </div>
               </div>
-              <h3>Our integrity</h3>
-              <p>
+              <h3 className="mb-[27px] font-mono text-2xl/7 font-bold tracking-tighter text-darkNavy">
+                Our integrity
+              </h3>
+              <p className="text-dimGrey">
                 We are fully committed to deliver a great yet safe, sustainable
                 micro-mobility experience in every city we serve.
               </p>
             </li>
-            <li>
-              <div>
-                <img src="" alt="" />
-                <b>03</b>
+            <li className="mx-auto max-w-[457px] lg:basis-1/3">
+              <div className="relative mb-4 pb-12 md:mb-8">
+                <img
+                  src={ourCommunity}
+                  alt="A group of people crossing the street"
+                  className="mx-auto rounded-full"
+                />
+                <div className="absolute bottom-0 left-1/2 flex h-24 w-24 -translate-x-1/2 items-center justify-center rounded-full bg-yellow">
+                  03
+                </div>
               </div>
-              <h3>Our community</h3>
-              <p>
+              <h3 className="mb-[27px] font-mono text-2xl/7 font-bold tracking-tighter text-darkNavy">
+                Our community
+              </h3>
+              <p className="text-dimGrey">
                 We support every community we serve. All workers are paid a
                 living wage based on their location and are Scoot employees.
               </p>
