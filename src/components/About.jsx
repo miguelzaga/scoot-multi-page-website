@@ -132,53 +132,64 @@ function About() {
             </li>
           </ul>
         </section>
-        <section>
-          <h2>FAQs</h2>
+        <section className="text-darkNavy">
+          <h2 className="mb-12 text-center font-mono text-3.5xl/none font-bold md:mb-16 md:text-5xl">
+            FAQs
+          </h2>
           <article>
-            <h3> How it works</h3>
-            <details>
-              <summary>How do I download the app?</summary>
-              To download the Scoot app, you can search “Scoot” in both the App
-              and Google Play stores. An even simpler way to do it would be to
-              click the relevant link at the bottom of this page and you’ll be
-              re-directed to the correct page.
-            </details>
-            <details>
-              <summary>Can I find a nearby Scoots?</summary>
-              Definitely! Simply open up the app and allow us to find your
-              location while using it. We&apos;ll show you all of the closest
-              Scoots and some extra useful information.
-            </details>
-            <details>
-              <summary>Do I need a license to ride?</summary>
-              Yup! We provide information inside the app regarding local laws
-              and the license you need to be able to ride our Scoots.
-            </details>
+            <h3 className="mb-8 text-center font-mono text-2xl/7 font-bold">
+              How it works
+            </h3>
+            <div className="space-y-4">
+              <details className="group bg-lightGrey p-8 pr-7">
+                <summary className="font-mono font-bold group-open:mb-6">
+                  How do I download the app?
+                </summary>
+                To download the Scoot app, you can search “Scoot” in both the
+                App and Google Play stores. An even simpler way to do it would
+                be to click the relevant link at the bottom of this page and
+                you’ll be re-directed to the correct page.
+              </details>
+              <details>
+                <summary>Can I find a nearby Scoots?</summary>
+                Definitely! Simply open up the app and allow us to find your
+                location while using it. We&apos;ll show you all of the closest
+                Scoots and some extra useful information.
+              </details>
+              <details>
+                <summary>Do I need a license to ride?</summary>
+                Yup! We provide information inside the app regarding local laws
+                and the license you need to be able to ride our Scoots.
+              </details>
+            </div>
           </article>
 
           <article>
             <h3>Safe driving</h3>
-            <details>
-              <summary> Should I wear a helmet?</summary>
-              Yes, please do! All cities have different laws. But we strongly
-              strongly strongly recommend always wearing a helmet regardless of
-              the local laws. We like you and we want you to be as safe as
-              possible while Scooting.
-            </details>
-            <details>
-              <summary>How about the rules & regulations?</summary>
-              Now is not the time to be a rule breaker. Be sure you&apos;re
-              complying with all local laws and regulations. Also, just be a
-              good human being. Be sure not to park your Scoot where it can
-              block access to buildings or get in people&apos;s way.
-            </details>
-            <details>
-              <summary>What if I damage my Scoot?</summary>
-              Be sure to read our terms and conditions carefully. Not the most
-              fun job we know but we make it as clear as possible. There&apos;s
-              an option to add insurance for each trip, or you can sign up for
-              annual insurance if you&apos;re a regular Scooter.
-            </details>
+            <div>
+              <details>
+                <summary> Should I wear a helmet?</summary>
+                Yes, please do! All cities have different laws. But we strongly
+                strongly strongly recommend always wearing a helmet regardless
+                of the local laws. We like you and we want you to be as safe as
+                possible while Scooting.
+              </details>
+              <details>
+                <summary>How about the rules & regulations?</summary>
+                Now is not the time to be a rule breaker. Be sure you&apos;re
+                complying with all local laws and regulations. Also, just be a
+                good human being. Be sure not to park your Scoot where it can
+                block access to buildings or get in people&apos;s way.
+              </details>
+              <details>
+                <summary>What if I damage my Scoot?</summary>
+                Be sure to read our terms and conditions carefully. Not the most
+                fun job we know but we make it as clear as possible.
+                There&apos;s an option to add insurance for each trip, or you
+                can sign up for annual insurance if you&apos;re a regular
+                Scooter.
+              </details>
+            </div>
           </article>
         </section>
       </main>
