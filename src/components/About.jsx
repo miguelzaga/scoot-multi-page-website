@@ -141,29 +141,35 @@ function About() {
               How it works
             </h3>
             <div className="basis-full space-y-4 md:space-y-6">
-              <details className="group bg-lightGrey p-8 pr-7">
-                <summary className="marker relative pr-8 font-mono font-bold group-open:mb-6 md:text-2xl/7">
+              <details className="group bg-lightGrey">
+                <summary className="marker relative cursor-pointer p-8 pr-[60px] font-mono font-bold hover:bg-lightYellow group-open:hover:bg-lightGrey md:pl-10 md:text-2xl/7">
                   How do I download the app?
                 </summary>
-                To download the Scoot app, you can search “Scoot” in both the
-                App and Google Play stores. An even simpler way to do it would
-                be to click the relevant link at the bottom of this page and
-                you’ll be re-directed to the correct page.
+                <p className="-mt-2 pb-8 pl-8 pr-7 pt-0 md:pl-10 md:pr-8 lg:pr-10">
+                  To download the Scoot app, you can search “Scoot” in both the
+                  App and Google Play stores. An even simpler way to do it would
+                  be to click the relevant link at the bottom of this page and
+                  you’ll be re-directed to the correct page.
+                </p>
               </details>
-              <details className="group bg-lightGrey p-8 pr-7">
-                <summary className="marker relative pr-8 font-mono font-bold group-open:mb-6 md:text-2xl/7">
+              <details className="group bg-lightGrey">
+                <summary className="marker relative cursor-pointer p-8 pr-[60px] font-mono font-bold hover:bg-lightYellow group-open:hover:bg-lightGrey md:pl-10 md:text-2xl/7">
                   Can I find a nearby Scoots?
                 </summary>
-                Definitely! Simply open up the app and allow us to find your
-                location while using it. We&apos;ll show you all of the closest
-                Scoots and some extra useful information.
+                <p className="-mt-2 pb-8 pl-8 pr-7 pt-0 md:pl-10 md:pr-8 lg:pr-10">
+                  Definitely! Simply open up the app and allow us to find your
+                  location while using it. We&apos;ll show you all of the
+                  closest Scoots and some extra useful information.
+                </p>
               </details>
-              <details className="group bg-lightGrey p-8 pr-7">
-                <summary className="marker relative pr-8 font-mono font-bold group-open:mb-6 md:text-2xl/7">
+              <details className="group bg-lightGrey">
+                <summary className="marker relative cursor-pointer p-8 pr-[60px] font-mono font-bold hover:bg-lightYellow group-open:hover:bg-lightGrey md:pl-10 md:text-2xl/7">
                   Do I need a license to ride?
                 </summary>
-                Yup! We provide information inside the app regarding local laws
-                and the license you need to be able to ride our Scoots.
+                <p className="-mt-2 pb-8 pl-8 pr-7 pt-0 md:pl-10 md:pr-8 lg:pr-10">
+                  Yup! We provide information inside the app regarding local
+                  laws and the license you need to be able to ride our Scoots.
+                </p>
               </details>
             </div>
           </article>
@@ -173,33 +179,39 @@ function About() {
               Safe driving
             </h3>
             <div className="basis-full space-y-4 md:space-y-6">
-              <details className="group bg-lightGrey p-8 pr-7">
-                <summary className="marker relative pr-8 font-mono font-bold group-open:mb-6 md:text-2xl/7">
+              <details className="group bg-lightGrey">
+                <summary className="marker relative cursor-pointer p-8 pr-[60px] font-mono font-bold hover:bg-lightYellow group-open:hover:bg-lightGrey md:pl-10 md:text-2xl/7">
                   Should I wear a helmet?
                 </summary>
-                Yes, please do! All cities have different laws. But we strongly
-                strongly strongly recommend always wearing a helmet regardless
-                of the local laws. We like you and we want you to be as safe as
-                possible while Scooting.
+                <p className="-mt-2 pb-8 pl-8 pr-7 pt-0 md:pl-10 md:pr-8 lg:pr-10">
+                  Yes, please do! All cities have different laws. But we
+                  strongly strongly strongly recommend always wearing a helmet
+                  regardless of the local laws. We like you and we want you to
+                  be as safe as possible while Scooting.
+                </p>
               </details>
-              <details className="group bg-lightGrey p-8 pr-7">
-                <summary className="marker relative pr-8 font-mono font-bold group-open:mb-6 md:text-2xl/7">
+              <details className="group bg-lightGrey">
+                <summary className="marker relative cursor-pointer p-8 pr-[60px] font-mono font-bold hover:bg-lightYellow group-open:hover:bg-lightGrey md:pl-10 md:text-2xl/7">
                   How about the rules & regulations?
                 </summary>
-                Now is not the time to be a rule breaker. Be sure you&apos;re
-                complying with all local laws and regulations. Also, just be a
-                good human being. Be sure not to park your Scoot where it can
-                block access to buildings or get in people&apos;s way.
+                <p className="-mt-2 pb-8 pl-8 pr-7 pt-0 md:pl-10 md:pr-8 lg:pr-10">
+                  Now is not the time to be a rule breaker. Be sure you&apos;re
+                  complying with all local laws and regulations. Also, just be a
+                  good human being. Be sure not to park your Scoot where it can
+                  block access to buildings or get in people&apos;s way.
+                </p>
               </details>
-              <details className="group bg-lightGrey p-8 pr-7">
-                <summary className="marker relative pr-8 font-mono font-bold group-open:mb-6 md:text-2xl/7">
+              <details className="group bg-lightGrey">
+                <summary className="marker relative cursor-pointer p-8 pr-[60px] font-mono font-bold hover:bg-lightYellow group-open:hover:bg-lightGrey md:pl-10 md:text-2xl/7">
                   What if I damage my Scoot?
                 </summary>
-                Be sure to read our terms and conditions carefully. Not the most
-                fun job we know but we make it as clear as possible.
-                There&apos;s an option to add insurance for each trip, or you
-                can sign up for annual insurance if you&apos;re a regular
-                Scooter.
+                <p className="-mt-2 pb-8 pl-8 pr-7 pt-0 md:pl-10 md:pr-8 lg:pr-10">
+                  Be sure to read our terms and conditions carefully. Not the
+                  most fun job we know but we make it as clear as possible.
+                  There&apos;s an option to add insurance for each trip, or you
+                  can sign up for annual insurance if you&apos;re a regular
+                  Scooter.
+                </p>
               </details>
             </div>
           </article>

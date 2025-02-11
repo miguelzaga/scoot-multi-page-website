@@ -15,19 +15,6 @@
 
   /* Custom marker */
   .marker {
-    list-style-type: none;
-  }
-
-  .marker:after {
-    content: url("/src/assets/icons/arrow.svg");
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-  }
-
-  [open] .marker:after {
-    top: calc(50% - 24px);
-    transform: rotate(180deg) translateY(-50%);
+    @apply list-none after:absolute after:right-7 after:top-1/2 after:-translate-y-1/2 after:content-[url("/src/assets/icons/arrow.svg")] group-open:after:rotate-180 md:after:right-8 lg:after:right-10;
   }
 }
