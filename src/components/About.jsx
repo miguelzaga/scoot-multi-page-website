@@ -1,9 +1,9 @@
+import Title from "./Title";
 import digitalEra from "/src/assets/images/digital-era.jpg";
 import betterLiving from "/src/assets/images/better-living.jpg";
-import aboutHeroMobile from "/src/assets/images/about-hero-mobile.jpg";
-import aboutHeroTablet from "/src/assets/images/about-hero-tablet.jpg";
-import aboutHeroDesktop from "/src/assets/images/about-hero-desktop.jpg";
-import whiteCircles from "/src/assets/patterns/white-circles.svg";
+import heroMobile from "/src/assets/images/about-hero-mobile.jpg";
+import heroTablet from "/src/assets/images/about-hero-tablet.jpg";
+import heroDesktop from "/src/assets/images/about-hero-desktop.jpg";
 import ourTech from "/src/assets/images/our-tech.jpg";
 import ourIntegrity from "/src/assets/images/our-integrity.jpg";
 import ourCommunity from "/src/assets/images/our-community.jpg";
@@ -11,25 +11,12 @@ import ourCommunity from "/src/assets/images/our-community.jpg";
 function About() {
   return (
     <>
-      <header className="relative z-0 overflow-clip bg-darkNavy px-[97px] py-[60px] md:py-[72px]">
-        <h1 className="mx-auto max-w-desktop text-center font-mono text-h3 font-bold tracking-tighter text-white md:text-left md:text-h1">
-          About
-        </h1>
-        <picture>
-          <source media="(min-width: 1024px)" srcSet={aboutHeroDesktop} />
-          <source media="(min-width: 640px)" srcSet={aboutHeroTablet} />
-          <img
-            src={aboutHeroMobile}
-            className="absolute bottom-0 left-0 top-0 -z-10 min-h-full w-full"
-            alt=""
-          />
-        </picture>
-        <img
-          src={whiteCircles}
-          className="invisible absolute right-[-31px] top-[69px] w-fit md:visible"
-        />
-      </header>
-
+      <Title
+        name="About"
+        imgMobile={heroMobile}
+        imgTablet={heroTablet}
+        imgDesktop={heroDesktop}
+      />
       <main className="px-8">
         <section className="mx-auto mb-29 mt-[72px] max-w-desktop md:mt-36 lg:mt-29">
           <article className="mb-29 lg:flex lg:items-center lg:justify-between odd:lg:flex-row-reverse">
