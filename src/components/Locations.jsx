@@ -16,25 +16,29 @@ function Locations() {
           imgTablet={heroTablet}
           imgDesktop={heroDesktop}
         />
-        <picture>
-          <source media="(min-width: 1024px)" srcSet={worldMapDesktop} />
-          <source media="(min-width: 640px)" srcSet={worldMapTablet} />
-          <img src={worldMapMobile} className="" alt="World Map" />
-          <ul>
-            <li>New York </li>
-            <li>London </li>
-            <li>Jakarta </li>
-            <li>Yokohama </li>
-          </ul>
-        </picture>
-        <div>
-          <h2>Your city not listed? </h2>
-          <p>
-            If you’d like to see Scoot in your hometown, be sure to let us know.
-            We track requests and plan launches based on demand. Feel free to
-            message us by clicking the link or messaging us on social.
-          </p>
-          <button>Message Us</button>
+        <div className="max-w-desktop mx-auto box-content px-8 py-[72px]">
+          <div className="pb-[72px]">
+            <picture>
+              <source media="(min-width: 1024px)" srcSet={worldMapDesktop} />
+              <source media="(min-width: 640px)" srcSet={worldMapTablet} />
+              <img src={worldMapMobile} className="" alt="World Map" />
+            </picture>
+            <ul className="mt-10 space-y-4">
+              <li className="bg-lightYellow text-center text-darkNavy font-mono text-h4 font-bold p-[22px]">New York </li>
+              <li className="bg-lightYellow text-center text-darkNavy font-mono text-h4 font-bold p-[22px]">London </li>
+              <li className="bg-lightYellow text-center text-darkNavy font-mono text-h4 font-bold p-[22px]">Jakarta </li>
+              <li className="bg-lightYellow text-center text-darkNavy font-mono text-h4 font-bold p-[22px]">Yokohama </li>
+            </ul>
+          </div>
+          <div className="flex flex-col gap-8 items-center">
+            <h2 className="text-3.5xl font-mono font-bold text-darkNavy capitalize text-center ">Your city not listed? </h2>
+            <p className="text-dimGrey text-center ">
+              If you’d like to see Scoot in your hometown, be sure to let us know.
+              We track requests and plan launches based on demand. Feel free to
+              message us by clicking the link or messaging us on social.
+            </p>
+            <button className="button">Message Us</button>
+          </div>
         </div>
       </main>
     </>
