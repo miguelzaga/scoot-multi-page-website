@@ -1,4 +1,5 @@
 import Title from "./Title";
+import ValuesList from "./ValuesList.jsx";
 import heroMobile from "/src/assets/images/careers-locations-hero-mobile.jpg";
 import heroTablet from "/src/assets/images/careers-locations-hero-tablet.jpg";
 import heroDesktop from "/src/assets/images/careers-locations-hero-desktop.jpg";
@@ -33,41 +34,14 @@ function Careers() {
           </div>
         </div>
       </section>
-      <section>
-        <h2></h2>
-        <ol>
-          <li>
-            <div>
-              <img src="" alt="" />
-              <div></div>
-            </div>
-            <div>
-              <h3></h3>
-              <p></p>
-            </div>
-          </li>
-          <li>
-            <div>
-              <img src="" alt="" />
-              <div></div>
-            </div>
-            <div>
-              <h3></h3>
-              <p></p>
-            </div>
-          </li>
-          <li>
-            <div>
-              <img src="" alt="" />
-              <div></div>
-            </div>
-            <div>
-              <h3></h3>
-              <p></p>
-            </div>
-          </li>
-        </ol>
+
+      <section className="mx-auto box-content max-w-desktop px-8 pb-[145px] md:pb-[120px]">
+        <h2 className="mb-16 font-mono text-3.5xl font-bold tracking-tighter text-darkNavy md:mb-[50px] md:text-5xl lg:mb-12 text-center">
+          Why join us?
+        </h2>
+        <ValuesList />
       </section>
+
       <section>
         <ul>
           <li>
