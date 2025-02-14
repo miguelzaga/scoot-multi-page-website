@@ -4,6 +4,15 @@ import heroMobile from "/src/assets/images/careers-locations-hero-mobile.jpg";
 import heroTablet from "/src/assets/images/careers-locations-hero-tablet.jpg";
 import heroDesktop from "/src/assets/images/careers-locations-hero-desktop.jpg";
 
+const careerPostings = [
+  { job: "General Manager", location: "Jakarta, Indonesia" },
+  { job: "UI/UX Designer", location: "Yokohama, Japan" },
+  { job: "Blog Content Copywriter", location: "New York, United States" },
+  { job: "Graphic Designer", location: "New York, United States" },
+  { job: "Fleet Supervisor", location: "Jakarta, Indonesia" },
+  { job: "UX Analyst", location: "London, United Kingdom" },
+];
+
 function Careers() {
   return (
     <main>
@@ -36,38 +45,32 @@ function Careers() {
       </section>
 
       <section className="mx-auto box-content max-w-desktop px-8 pb-[145px] md:pb-[120px]">
-        <h2 className="mb-16 font-mono text-3.5xl font-bold tracking-tighter text-darkNavy md:mb-[50px] md:text-5xl lg:mb-12 text-center">
+        <h2 className="mb-16 text-center font-mono text-3.5xl font-bold tracking-tighter text-darkNavy md:mb-[50px] md:text-5xl lg:mb-12">
           Why join us?
         </h2>
         <ValuesList />
       </section>
 
-      <section>
-        <ul>
-          <li>
-            <div>
-              <p></p>
-              <p></p>
-            </div>
-            <button> </button>
-          </li>
-          <li>
-            <div>
-              <p></p>
-              <p></p>
-            </div>
-            <button> </button>
-          </li>
-          <li>
-            <div>
-              <p></p>
-              <p></p>
-            </div>
-            <button> </button>
-          </li>
+      <section className="mx-auto box-content max-w-desktop px-8 pb-[120px]">
+        <ul className="space-y-4 lg:space-y-6">
+          {careerPostings.map(({ job, location }, i) => (
+            <CareerPosting job={job} location={location} key={`posting-${i}`} />
+          ))}
         </ul>
       </section>
     </main>
+  );
+}
+
+function CareerPosting({ job, location }) {
+  return (
+    <div className="flex flex-col place-items-center gap-4 bg-lightGrey p-8 pt-9 md:flex-row md:justify-between md:px-12 md:py-[33px] lg:pl-10 lg:pr-16">
+      <div className="space-y-1 text-center text-darkNavy md:text-left">
+        <p className="font-mono text-lg/6 font-bold">{job}</p>
+        <p>{location}</p>
+      </div>
+      <button className="button w-full max-w-80 md:w-[180px]">Apply</button>
+    </div>
   );
 }
 
