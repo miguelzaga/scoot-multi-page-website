@@ -4,22 +4,48 @@ import scooter from "/src/assets/icons/scooter.svg";
 import nearYou from "/src/assets/images/near-you.jpg";
 import payments from "/src/assets/images/payments.jpg";
 import telemetry from "/src/assets/images/telemetry.jpg";
+import homeHeroMobile from "/src/assets/images/home-hero-mobile.jpg";
+import homeHeroTablet from "/src/assets/images/home-hero-tablet.jpg";
+import homeHeroDesktop from "/src/assets/images/home-hero-desktop.jpg";
 
 function Home() {
   return (
     <>
-      <section className="bg-darkNavy px-8 md:px-10">
-        <div className="max-w- mx-auto max-w-[573px] pb-[179px] pt-[115px] text-center text-white md:pb-[217px] md:pt-[137px] lg:max-w-desktop lg:py-[153px] lg:text-left">
-          <h1 className="mb-6 font-mono text-h3 font-bold tracking-tighter md:text-h1 lg:mb-10 lg:max-w-lg">
-            Scooter sharing made simple
-          </h1>
-          <p className="mb-[34px] md:mb-8 lg:mb-10 lg:ml-24">
-            Scoot takes the hassle out of urban mobility. Our bikes are placed
-            in convenient locations in each of our cities. Use our app to locate
-            the nearest bike, unlock it with a tap, and you’re away!
-          </p>
-          <button className="button lg:ml-24">Get Scootin</button>
+      <section className="relative overflow-y-clip">
+        <div className="relative mx-auto box-content max-w-desktop px-8 md:px-10">
+          <div className="mx-auto max-w-[573px] pb-[179px] pt-[115px] text-center text-white md:pb-[217px] md:pt-[137px] lg:ml-0 lg:max-w-[500px] lg:py-[153px] lg:text-left">
+            <h1 className="mb-6 font-mono text-h3 font-bold tracking-tighter md:text-h1 lg:mb-10 lg:max-w-lg">
+              Scooter sharing made simple
+            </h1>
+            <p className="mb-[34px] md:mb-8 lg:mb-10 lg:ml-24">
+              Scoot takes the hassle out of urban mobility. Our bikes are placed
+              in convenient locations in each of our cities. Use our app to
+              locate the nearest bike, unlock it with a tap, and you’re away!
+            </p>
+            <button className="button lg:ml-24">Get Scootin</button>
+          </div>
+          <div>
+            <img
+              className="absolute bottom-[34px] right-[max(calc(50%+52px),50%)] md:bottom-[39px] lg:left-[max(580px,50%)] lg:right-auto lg:top-[350px]"
+              src="src/assets/patterns/right-arrow.svg"
+              alt=""
+            />
+            <img
+              className="absolute right-[calc(100%-80px)] top-[350px] hidden h-4 w-full lg:block"
+              src="src/assets/patterns/line.svg"
+              alt=""
+            />
+          </div>
         </div>
+        <picture>
+          <source media="(min-width: 1024px)" srcSet={homeHeroDesktop} />
+          <source media="(min-width: 640px)" srcSet={homeHeroTablet} />
+          <img
+            src={homeHeroMobile}
+            className="absolute bottom-0 left-0 top-0 -z-10 min-h-full w-full"
+            alt=""
+          />
+        </picture>
       </section>
       <section className="bg-white px-8 md:px-10">
         <ul className="mx-auto my-29 flex max-w-[573px] flex-col gap-12 text-center md:mb-36 md:mt-[122px] md:gap-10 md:text-left lg:mb-[200px] lg:mt-40 lg:max-w-desktop lg:flex-row lg:gap-[30px]">
