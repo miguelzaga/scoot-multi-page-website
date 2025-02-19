@@ -47,8 +47,8 @@ function Home() {
           />
         </picture>
       </section>
-      <section className="bg-white px-8 md:px-10">
-        <ul className="mx-auto my-29 flex max-w-[573px] flex-col gap-12 text-center md:mb-36 md:mt-[122px] md:gap-10 md:text-left lg:mb-[200px] lg:mt-40 lg:max-w-desktop lg:flex-row lg:gap-[30px]">
+      <section className="px-8 md:px-10">
+        <ul className="relative mx-auto my-29 flex max-w-[573px] flex-col gap-12 text-center md:mb-36 md:mt-[122px] md:gap-10 md:text-left lg:mb-[200px] lg:mt-40 lg:max-w-desktop lg:flex-row lg:gap-[30px]">
           <li className="flex flex-col items-center gap-6 md:flex-row md:items-start md:gap-20 lg:flex-col lg:gap-10">
             <img className="max-w-14 md:max-w-24" src={locate} alt="" />
             <div>
@@ -88,6 +88,8 @@ function Home() {
               </p>
             </div>
           </li>
+          <div className="absolute -top-[122px] left-10 -z-10 hidden h-[513px] w-4 bg-lightGrey md:max-lg:block"></div>
+          <div className="absolute right-72 top-10 -z-10 hidden h-4 w-screen bg-lightGrey lg:block"></div>
         </ul>
       </section>
       <section className="mx-auto mb-29 space-y-29 bg-white px-8 md:mb-[104px] md:px-10 lg:mb-52">
