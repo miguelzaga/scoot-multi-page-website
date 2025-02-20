@@ -1,24 +1,36 @@
 import { Link } from "react-router-dom";
 import appStore from "/src/assets/icons/app-store.svg";
 import googlePlay from "/src/assets/icons/google-play.svg";
-import semiCircles from "/src/assets/patterns/semi-circles.svg"
+import semiCircles from "/src/assets/patterns/semi-circles.svg";
 
 function Footer() {
   return (
     <footer>
-      <div className="bg-darkNavy px-8 py-22 md:py-[62px] lg:py-[102px] overflow-x-clip z-10">
-        <div className="gap-10 flex flex-col items-center lg:flex-row justify-between max-w-desktop mx-auto relative z-0">
+      <div className="z-10 overflow-x-clip bg-darkNavy px-8 py-22 md:py-[62px] lg:py-[102px]">
+        <div className="relative z-0 mx-auto flex max-w-desktop flex-col items-center justify-between gap-10 lg:flex-row">
           <h2 className="text-center font-mono text-3.5xl/none font-bold tracking-tighter text-white md:max-w-[457px] md:text-h2 lg:text-left">
             Sign up and Scoot off today
           </h2>
-          <div className="flex gap-3 justify-center items-center md:gap-[18px]">
-            <img className="max-lg:max-h-10" src={appStore} alt="Avaliable on the AppStore" />
-            <img className="max-lg:max-h-10" src={googlePlay} alt="Get it on GooglePlay" />
+          <div className="flex items-center justify-center gap-3 md:gap-[18px]">
+            <img
+              className="max-lg:max-h-10"
+              src={appStore}
+              alt="Avaliable on the AppStore"
+            />
+            <img
+              className="max-lg:max-h-10"
+              src={googlePlay}
+              alt="Get it on GooglePlay"
+            />
           </div>
-          <img className="absolute max-w-none -right-[203px] -z-10 -bottom-[88px] md:-bottom-[62px] md:-right-40 lg:-bottom-28 lg:-right-80" src={semiCircles} alt="" />
+          <img
+            className="absolute -bottom-[88px] -right-[203px] -z-10 max-w-none md:-bottom-[62px] md:-right-40 lg:-bottom-28 lg:-right-80"
+            src={semiCircles}
+            alt=""
+          />
         </div>
       </div>
-      <div className="bg-[#333A44] px-10 pb-22 pt-16 md:flex-row md:gap-[58px] md:pb-8 md:pt-9 relative">
+      <div className="relative bg-[#333A44] px-10 pb-22 pt-16 md:flex-row md:gap-[58px] md:pb-8 md:pt-9">
         <div className="flex flex-col items-center md:flex-row md:gap-[58px] lg:mx-auto lg:max-w-desktop">
           <Link to="/">
             <svg

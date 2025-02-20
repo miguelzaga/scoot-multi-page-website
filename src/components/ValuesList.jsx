@@ -4,7 +4,7 @@ import ourCommunity from "/src/assets/images/our-community.jpg";
 
 function ValuesList() {
   return (
-    <ol className="flex flex-col gap-14 lg:flex-row lg:gap-[30px] text-center">
+    <ol className="flex flex-col gap-14 text-center lg:flex-row lg:gap-[30px]">
       <li className="mx-auto max-w-[457px] lg:basis-1/3">
         <div className="relative mb-4 pb-12 md:mb-8">
           <img
@@ -21,8 +21,7 @@ function ValuesList() {
         </h3>
         <p className="text-dimGrey">
           We’re using cutting edge technology to drive accessible urban
-          transportation forward. Our fully electric scooters are a joy to
-          ride!
+          transportation forward. Our fully electric scooters are a joy to ride!
         </p>
       </li>
       <li className="mx-auto max-w-[457px] lg:basis-1/3">
@@ -59,12 +58,12 @@ function ValuesList() {
           Our community
         </h3>
         <p className="text-dimGrey">
-          We support every community we serve. All workers are paid a
-          living wage based on their location and are Scoot employees.
+          We support every community we serve. All workers are paid a living
+          wage based on their location and are Scoot employees.
         </p>
       </li>
     </ol>
-  )
+  );
 }
 
-export default ValuesList
+export default ValuesList;

@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "format_check": "prettier src --check",
+    "format": "prettier src --write"
   },
   "dependencies": {
     "react": "^18.3.1",
