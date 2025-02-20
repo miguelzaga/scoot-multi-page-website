@@ -6,6 +6,11 @@
   body {
     @apply text-body;
   }
+
+  a:hover,
+  a:focus-visible {
+    @apply text-yellow;
+  }
 }
 
 @layer components {
