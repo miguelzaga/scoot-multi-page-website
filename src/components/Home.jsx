@@ -10,6 +10,7 @@ import homeHeroDesktop from "/src/assets/images/home-hero-desktop.jpg";
 import leftDownwardArrow from "/src/assets/patterns/left-downward-arrow.svg";
 import rightArrow from "/src/assets/patterns/right-arrow.svg";
 import circle from "/src/assets/patterns/circle.svg";
+import line from "/src/assets/patterns/line.svg";
 
 function Home() {
   return (
@@ -30,12 +31,12 @@ function Home() {
           <div>
             <img
               className="absolute bottom-[34px] right-[max(calc(50%+52px),50%)] md:bottom-[39px] lg:left-[max(580px,50%)] lg:right-auto lg:top-[350px]"
-              src="src/assets/patterns/right-arrow.svg"
+              src={rightArrow}
               alt=""
             />
             <img
               className="absolute right-[calc(100%-80px)] top-[350px] hidden h-4 w-full lg:block"
-              src="src/assets/patterns/line.svg"
+              src={line}
               alt=""
             />
           </div>

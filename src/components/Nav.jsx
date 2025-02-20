@@ -22,7 +22,11 @@ function Nav() {
             />
           </button>
           <div className="mx-auto flex h-16 max-w-desktop items-center justify-center bg-white md:h-24 md:justify-start md:gap-[58px]">
-            <Link aria-label="go to home page" onClick={() => setIsOpen(false)} to="/">
+            <Link
+              aria-label="go to home page"
+              onClick={() => setIsOpen(false)}
+              to="/"
+            >
               <img
                 className="max-w-[75px] md:max-w-[107px]"
                 src={logo}
@@ -34,17 +38,29 @@ function Nav() {
             >
               <ul className="ml-8 mt-16 flex min-w-fit flex-col gap-6 font-mono text-lg/6 font-bold text-white md:m-0 md:flex-row md:items-center md:text-body md:text-dimGrey lg:gap-8">
                 <li>
-                  <Link aria-label="go to about page" onClick={() => setIsOpen(false)} to="/about">
+                  <Link
+                    aria-label="go to about page"
+                    onClick={() => setIsOpen(false)}
+                    to="/about"
+                  >
                     About
                   </Link>
                 </li>
                 <li>
-                  <Link aria-label="go to locations page" onClick={() => setIsOpen(false)} to="/locations">
+                  <Link
+                    aria-label="go to locations page"
+                    onClick={() => setIsOpen(false)}
+                    to="/locations"
+                  >
                     Location
                   </Link>
                 </li>
                 <li>
-                  <Link aria-label="go to careers page" onClick={() => setIsOpen(false)} to="/careers">
+                  <Link
+                    aria-label="go to careers page"
+                    onClick={() => setIsOpen(false)}
+                    to="/careers"
+                  >
                     Careers
                   </Link>
                 </li>

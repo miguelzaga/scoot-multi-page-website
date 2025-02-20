@@ -47,18 +47,25 @@ function Footer() {
           </Link>
           <ul className="mb-[85px] flex flex-col gap-4 text-center font-mono font-bold text-dimGrey md:mb-0 md:flex-row md:items-center md:gap-8">
             <li>
-              <Link to="/about" aria-label="Go to the about page">About</Link>
+              <Link to="/about" aria-label="Go to the about page">
+                About
+              </Link>
             </li>
             <li>
-              <Link to="/locations" aria-label="Go to the location page">Location</Link>
+              <Link to="/locations" aria-label="Go to the location page">
+                Location
+              </Link>
             </li>
             <li>
-              <Link to="/careers" aria-label="Go to the careers page">Careers</Link>
+              <Link to="/careers" aria-label="Go to the careers page">
+                Careers
+              </Link>
             </li>
           </ul>
           <ul className="flex gap-6 md:ml-auto">
             <li>
-              <a aria-label="Go to the facebook page"
+              <a
+                aria-label="Go to the facebook page"
                 href="#"
                 className="text-yellow hover:text-lightGrey focus-visible:text-lightGrey"
               >
@@ -71,7 +78,8 @@ function Footer() {
               </a>
             </li>
             <li>
-              <a aria-label="Go to the instagram page"
+              <a
+                aria-label="Go to the instagram page"
                 href="#"
                 className="text-yellow hover:text-lightGrey focus-visible:text-lightGrey"
               >
@@ -84,7 +92,8 @@ function Footer() {
               </a>
             </li>
             <li>
-              <a aria-label="Go to the twitter page"
+              <a
+                aria-label="Go to the twitter page"
                 href="#"
                 className="text-yellow hover:text-lightGrey focus-visible:text-lightGrey"
               >
