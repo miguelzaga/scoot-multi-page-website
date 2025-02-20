@@ -8,6 +8,7 @@ import homeHeroMobile from "/src/assets/images/home-hero-mobile.jpg";
 import homeHeroTablet from "/src/assets/images/home-hero-tablet.jpg";
 import homeHeroDesktop from "/src/assets/images/home-hero-desktop.jpg";
 import leftDownwardArrow from "/src/assets/patterns/left-downward-arrow.svg";
+import rightArrow from "/src/assets/patterns/right-arrow.svg";
 import circle from "/src/assets/patterns/circle.svg";
 
 function Home() {
@@ -96,7 +97,7 @@ function Home() {
       </section>
       <section className="mx-auto mb-29 space-y-29 overflow-x-clip bg-white px-8 md:mb-[104px] md:px-10 lg:mb-52">
         <article className="mx-auto text-center lg:flex lg:max-w-desktop lg:justify-between lg:text-left odd:lg:flex-row-reverse">
-          <div className="relative mx-auto max-w-fit">
+          <div className="relative max-w-fit max-lg:mx-auto">
             <img
               className="mx-auto mb-14 rounded-full lg:m-0"
               src={telemetry}
@@ -128,11 +129,23 @@ function Home() {
           </div>
         </article>
         <article className="mx-auto text-center lg:flex lg:max-w-desktop lg:justify-between lg:text-left odd:lg:flex-row-reverse">
-          <img
-            className="mx-auto mb-14 rounded-full lg:m-0"
-            src={nearYou}
-            alt=""
-          />
+          <div className="relative max-w-fit max-lg:mx-auto">
+            <img
+              className="mx-auto mb-14 rounded-full lg:m-0"
+              src={nearYou}
+              alt=""
+            />
+            <img
+              className="absolute right-20 top-0 z-10 max-w-none max-[370px]:max-w-80 sm:right-64"
+              src={rightArrow}
+              alt=""
+            />
+            <img
+              className="absolute bottom-0 right-full z-0 mr-16 hidden max-w-none md:block"
+              src={circle}
+              alt=""
+            />
+          </div>
 
           <div className="mx-auto flex max-w-[576px] flex-col items-center gap-y-8 md:gap-y-10 lg:mx-0 lg:max-w-[445px] lg:items-start lg:gap-y-6">
             <h2 className="mx-auto max-w-[457px] font-mono text-3.5xl/none font-bold tracking-tighter text-darkNavy md:text-h2 lg:mt-[66px]">
@@ -148,11 +161,23 @@ function Home() {
           </div>
         </article>
         <article className="mx-auto text-center lg:flex lg:max-w-desktop lg:justify-between lg:text-left odd:lg:flex-row-reverse">
-          <img
-            className="mx-auto mb-14 rounded-full lg:m-0"
-            src={payments}
-            alt=""
-          />
+          <div className="relative max-w-fit max-lg:mx-auto">
+            <img
+              className="mx-auto mb-14 rounded-full lg:m-0"
+              src={payments}
+              alt=""
+            />
+            <img
+              className="absolute bottom-0 left-32 top-0 z-10 max-w-none max-[370px]:max-w-96 md:left-64 md:top-20"
+              src={leftDownwardArrow}
+              alt=""
+            />
+            <img
+              className="absolute bottom-0 left-full z-0 ml-16 hidden max-w-none md:block"
+              src={circle}
+              alt=""
+            />
+          </div>
 
           <div className="mx-auto flex max-w-[576px] flex-col items-center gap-y-8 md:gap-y-10 lg:mx-0 lg:max-w-[445px] lg:items-start lg:gap-y-6">
             <h2 className="mx-auto max-w-[457px] font-mono text-3.5xl/none font-bold tracking-tighter text-darkNavy md:text-h2 lg:mt-[66px]">
