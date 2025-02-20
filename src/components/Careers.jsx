@@ -3,6 +3,9 @@ import ValuesList from "./ValuesList.jsx";
 import heroMobile from "/src/assets/images/careers-locations-hero-mobile.jpg";
 import heroTablet from "/src/assets/images/careers-locations-hero-tablet.jpg";
 import heroDesktop from "/src/assets/images/careers-locations-hero-desktop.jpg";
+import joinUs from "/src/assets/images/join-us.jpg";
+import leftDownwardArrow from "/src/assets/patterns/left-downward-arrow.svg";
+import circle from "/src/assets/patterns/circle.svg";
 
 const careerPostings = [
   { job: "General Manager", location: "Jakarta, Indonesia" },
@@ -15,7 +18,7 @@ const careerPostings = [
 
 function Careers() {
   return (
-    <main>
+    <main className="overflow-x-clip">
       <Title
         name="Careers"
         imgMobile={heroMobile}
@@ -24,11 +27,23 @@ function Careers() {
       />
       <section className="mx-auto box-content max-w-desktop px-8 pb-[120px] pt-[72px] md:pt-36 lg:pt-[120px]">
         <div className="flex flex-col items-center justify-between gap-14 md:gap-16 lg:flex-row-reverse">
-          <img
-            className="w-full max-w-[452px] rounded-full"
-            src="/src/assets/images/join-us.jpg"
-            alt="Guy standing in a meeting holding a tablet"
-          />
+          <div className="relative max-w-fit max-lg:mx-auto">
+            <img
+              className="w-full max-w-[452px] rounded-full"
+              src={joinUs}
+              alt="Guy standing in a meeting holding a tablet"
+            />
+            <img
+              className="absolute bottom-0 z-10 max-w-none max-[370px]:max-w-96 lg:-left-32"
+              src={leftDownwardArrow}
+              alt=""
+            />
+            <img
+              className="absolute bottom-0 left-full z-0 ml-16 hidden max-w-none md:block"
+              src={circle}
+              alt=""
+            />
+          </div>
           <div className="max-w-[573px] text-center lg:max-w-[445px] lg:text-left">
             <h2 className="mb-8 font-mono text-3.5xl font-bold tracking-tighter text-darkNavy md:mb-10 md:text-5xl lg:mb-6">
               Care to join our mission?

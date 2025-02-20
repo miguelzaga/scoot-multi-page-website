@@ -9,13 +9,13 @@
 
   a:hover,
   a:focus-visible {
-    @apply text-yellow;
+    @apply text-yellow transition-all ease-in-out;
   }
 }
 
 @layer components {
   .button {
-    @apply h-[53px] w-[180px] border-[3px] border-yellow bg-yellow font-mono font-bold text-white hover:bg-transparent hover:text-yellow;
+    @apply h-[53px] w-[180px] border-[3px] border-yellow bg-yellow font-mono font-bold text-white transition-all ease-in-out hover:bg-transparent hover:text-yellow;
   }
 
   /* Custom marker */
