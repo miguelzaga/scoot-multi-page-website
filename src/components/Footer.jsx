@@ -32,7 +32,7 @@ function Footer() {
       </div>
       <div className="relative bg-[#333A44] px-10 pb-22 pt-16 md:flex-row md:gap-[58px] md:pb-8 md:pt-9">
         <div className="flex flex-col items-center md:flex-row md:gap-[58px] lg:mx-auto lg:max-w-desktop">
-          <Link to="/">
+          <Link to="/" aria-label="Go to the home page">
             <svg
               className="mb-10 w-[107px] fill-white md:mb-0"
               xmlns="http://www.w3.org/2000/svg"
@@ -47,18 +47,18 @@ function Footer() {
           </Link>
           <ul className="mb-[85px] flex flex-col gap-4 text-center font-mono font-bold text-dimGrey md:mb-0 md:flex-row md:items-center md:gap-8">
             <li>
-              <Link to="/about">About</Link>
+              <Link to="/about" aria-label="Go to the about page">About</Link>
             </li>
             <li>
-              <Link to="/locations">Location</Link>
+              <Link to="/locations" aria-label="Go to the location page">Location</Link>
             </li>
             <li>
-              <Link to="/careers">Careers</Link>
+              <Link to="/careers" aria-label="Go to the careers page">Careers</Link>
             </li>
           </ul>
           <ul className="flex gap-6 md:ml-auto">
             <li>
-              <a
+              <a aria-label="Go to the facebook page"
                 href="#"
                 className="text-yellow hover:text-lightGrey focus-visible:text-lightGrey"
               >
@@ -71,7 +71,7 @@ function Footer() {
               </a>
             </li>
             <li>
-              <a
+              <a aria-label="Go to the instagram page"
                 href="#"
                 className="text-yellow hover:text-lightGrey focus-visible:text-lightGrey"
               >
@@ -84,7 +84,7 @@ function Footer() {
               </a>
             </li>
             <li>
-              <a
+              <a aria-label="Go to the twitter page"
                 href="#"
                 className="text-yellow hover:text-lightGrey focus-visible:text-lightGrey"
               >
